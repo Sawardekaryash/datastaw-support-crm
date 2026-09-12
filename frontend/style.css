@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* ===============================
+   Header
+================================ */
+
+.header {
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+    padding: 28px 40px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+.header p {
+    color: #dbeafe;
+    font-size: 15px;
+}
+
+/* ===============================
+   Main Container
+================================ */
+
+.container {
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 0 20px;
+}
+
+/* ===============================
+   Dashboard
+================================ */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card h3 {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.stat-card p {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 6px;
+    color: #0f172a;
+}
+
+/* ===============================
+   Cards
+================================ */
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    font-size: 21px;
+    margin-bottom: 22px;
+    color: #0f172a;
+}
+
+.card h3 {
+    margin: 18px 0 12px;
+    color: #1e293b;
+}
+
+/* ===============================
+   Form
+================================ */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #334155;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    background: white;
+    color: #1e293b;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ===============================
+   Buttons
+================================ */
+
+button {
+    margin-top: 18px;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* ===============================
+   Section Header
+================================ */
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header button {
+    margin-top: 0;
+}
+
+/* ===============================
+   Filters
+================================ */
+
+.filters {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* ===============================
+   Tickets
+================================ */
+
+.ticket {
+    border: 1px solid #e2e8f0;
+    padding: 18px;
+    border-radius: 9px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    background: #ffffff;
+}
+
+.ticket:hover {
+    border-color: #93c5fd;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+    transform: translateY(-1px);
+}
+
+.ticket-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ticket-id {
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.ticket strong {
+    color: #0f172a;
+}
+
+.ticket p {
+    color: #475569;
+    margin-top: 4px;
+}
+
+.ticket small {
+    color: #94a3b8;
+}
+
+/* ===============================
+   Status
+================================ */
+
+.status {
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #e2e8f0;
+    color: #334155;
+}
+
+/* ===============================
+   Ticket Details
+================================ */
+
+#ticketDetails {
+    line-height: 1.9;
+}
+
+#ticketDetails p {
+    margin-bottom: 5px;
+}
+
+#ticketDetails hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 22px 0;
+}
+
+/* ===============================
+   Internal Notes
+================================ */
+
+.notes-container {
+    margin-bottom: 20px;
+}
+
+.note {
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    padding: 15px 17px;
+    margin: 12px 0;
+    border-radius: 7px;
+}
+
+.note strong {
+    display: block;
+    color: #1e40af;
+    margin-bottom: 5px;
+}
+
+.note p {
+    color: #334155;
+    margin-bottom: 5px;
+}
+
+.note small {
+    color: #64748b;
+}
+
+/* ===============================
+   Messages
+================================ */
+
+#createMessage {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #166534;
+}
+
+/* ===============================
+   Responsive
+================================ */
+
+@media (max-width: 900px) {
+
+    .dashboard {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 22px 20px;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 0 14px;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full {
+        grid-column: auto;
+    }
+
+    .filters {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .ticket-top {
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card p {
+        font-size: 27px;
+    }
+}
